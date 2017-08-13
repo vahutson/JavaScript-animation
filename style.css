@@ -1,0 +1,96 @@
+body {
+    background: url('img/sky.jpg') center no-repeat;
+    background-size: cover;
+
+}
+
+
+
+.man {
+    position: absolute;
+top: 300px;
+    width: 155px;
+    height: 155px;
+    background: url("img/WalkingManSpriteSheet.png") center repeat-x;
+    background-position-x: -15px;
+    background-position-y: -30px;
+    transition-property: top;
+    transition-duration: 0.2s;
+    z-index: 0;
+}
+
+.terrain {
+    position: absolute;
+    top: 400px;
+    background: url("img/ground.jpg");
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+}
+
+.fence {
+    position: absolute;
+    top: -56px;
+    height: 60px;
+    width: 100%;
+    background: url("img/fence.png") center;
+    background-size: contain;
+    -webkit-box-shadow: 0px 3px 14px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 14px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 14px 0px rgba(0,0,0,0.75);
+}
+.trash {
+    position: absolute;
+    top: -70px;
+    left: 354px;
+    width: 80px;
+    height: 110px;
+    background: url("img/Trash-Can-Free-PNG-Image.png") center no-repeat;
+    z-index: -4;
+    background-size: cover;
+    font-size: 100px;
+
+}
+
+.tree__00 {
+    position: absolute;
+    top: 117px;;
+    left: -140px;
+    background: url("img/a5b0097b.png") center no-repeat;
+    width: 600px;
+    height: 600px;
+    z-index: 2;
+}
+
+.man .animated {
+    animation: jump 1s;
+    transition-duration: 1s;
+}
+
+.tree__01 {
+    position: absolute;
+    left: 300px;
+    background: url("img/tree-1957497_960_720.png") center no-repeat;
+    width: 896px;
+    height: 720px;
+    z-index: 3;
+}
+
+.man .animated {
+    animation: jump 1s;
+    transition-duration: 1s;
+}
+
+@keyframes jump {
+
+    from {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-300px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
